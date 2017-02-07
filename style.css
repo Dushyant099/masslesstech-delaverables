@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+}
+
+.parallax {
+  background:
+  linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(https://static.pexels.com/photos/163018/food-business-lunch-restaurant-lunch-163018.jpeg);
+
+  color: rgb(255,255,255);
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px;) {
+  .parallax {
+      background-attachment: scroll;
+  }
+}
+
+.center{
+  margin-top: 30%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.content-center{
+  text-align: center;
+}
+
+
+/*star retings*/
+fieldset, label { margin: 0; padding: 0; }
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: transparent;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0;
+   color: gold;
+}
+
+/*footer*/
+.footer{
+  padding: 0.50%;
+  text-align: center;
+}
